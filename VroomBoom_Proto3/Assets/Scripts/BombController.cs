@@ -21,7 +21,7 @@ public class BombController : MonoBehaviour
 
     [SerializeField] Text bombCounterText;
 
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         bool objectDestroyed;
         //Vector3 resetTransform = new Vector3(0, 0, 0);
@@ -35,6 +35,10 @@ public class BombController : MonoBehaviour
                 gameObject.transform.position = new Vector3(bombPosX, bombPosY, bombPosZ);
                 
             }
+        }
+        if(other.gameObject.tag == "Player"){
+            other.gameObject.SetActive(false);
+           // Destroy(other.gameObject);
         }
 
     }
