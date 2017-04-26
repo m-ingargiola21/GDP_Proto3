@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0143BE8F-67A7-8178-5307-31F516AE8CFE}</ProjectGuid>
+    <ProjectGuid>{F9017F4A-18CE-B4A4-1072-1C68668A5AF4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -49,9 +49,17 @@
      <Compile Include="Assets\Scripts\CoinCollection.cs" />
      <Compile Include="Assets\Scripts\FloorCollision.cs" />
      <Compile Include="Assets\Scripts\HoverController.cs" />
+     <Compile Include="Assets\Scripts\MainMenuManager.cs" />
      <Compile Include="Assets\Scripts\SceneController.cs" />
      <Compile Include="Assets\Scripts\WallCollision.cs" />
+     <Compile Include="Assets\Space\Scripts\CameraScroll.cs" />
+     <Compile Include="Assets\Space\Scripts\SkyboxSwitcher.cs" />
+     <None Include="Assets\Space\StarNestSkybox_HSV.shader" />
+     <None Include="Assets\Space\StarNestSkyboxMask.shader" />
+     <None Include="Assets\Space\hsv.cginc" />
      <None Include="Assets\Hover9K\Shaders\Transparent Bumped Specular Cutout.shader" />
+     <None Include="Assets\Space\StarNestSkybox.shader" />
+     <None Include="Assets\Space\StarNest.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
